@@ -1,10 +1,10 @@
 #/bin/bash
 
-echo -e "\033[1;33m- - - - -> \033[01;34mScript Configurar o servidor para usar SSL/TLS Stunnel4"
+echo -e "\033[1;33m- - - - -> \033[01;34mScript para configurar servidor SSL/TLS Stunnel4"
 echo -e "\033[1;33m #################"
-echo -e "\033[1;33m- - - - -> \033[01;34mScript Configure the server to use SSL / TLS Stunnel4"
+echo -e "\033[1;33m- - - - -> \033[01;34mScript para configurar servidor SSL / TLS Stunnel4"
 echo -e "\033[1;33m #################"
-echo -e "\033[1;31mC A N A L   PayloadHTTP"
+echo -e "\033[1;31mSSL en configuración"
 sleep 2
 
 apt-get update -y
@@ -29,13 +29,13 @@ clear
 yum install stunnel -y
 clear
 
-echo -e "\033[1;31mC A P I T U R A N D O  I P"
+echo -e "\033[1;31mCONFIGURANDO IP"
 ip=$(curl https://api.ipify.org/)
 echo $ip
 clear
 
 echo -e "\033[1;33m ######################################"
-echo -e "\033[1;31mF I C A   A P E R T A N D O   E N T E R"
+echo -e "\033[1;31mPresione   E N T E R"
 echo -e "\033[1;33m #################"
 echo -e "\033[1;31mS T A R T  E N T E R"
 echo -e "\033[1;33m ######################################"
